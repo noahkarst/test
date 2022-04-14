@@ -10,18 +10,27 @@ body {
 /* ------------------------------------------------------------ */
 
 .hello {
-    font-size: 2vw;
-    font-weight: bold;
+    font-size: 35px;
+    font-weight: bolder;
     transform: translate(0px,0px);
+    position: relative;
+}
+
+.fname {
+  position: relative;
+  transform: translate(0px,0px);
+  font-size: 125px;
+  font-weight: bolder;
 }
 
 .name {
-    position: absolute;
+    position: relative;
     transform: translate(0px,0px);
-    font-size: 10vw;
+    font-size: 125px;
   }
   .name_borders {
-    font-weight: bolder;
+    font-weight: bold;
+    white-space: nowrap;
   }
   .name_borders:before {
     content: "[";
@@ -32,15 +41,16 @@ body {
     right: 0;
   }
   .name_borders:after, .name_borders:before {
-    position: absolute;
+    position: relative;
+    white-space: nowrap;
     animation-name: opacity;
         animation-duration: 2s;
         animation-iteration-count: infinite;
   }
   .name_text {
-    display: inline-block;
     white-space: nowrap;
-    padding: 0 .5em;
+    display: inline-block;
+    padding: 0 .1em;
     margin: 0px;
   }
   
@@ -55,11 +65,14 @@ body {
 
 /* ------------------------------------------------------------ */
 
+.intro {
+  font-size: 35px;
+  font-weight: lighter;
+  position: relative;
+}
+
 .content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   overflow: hidden;
   font-size: 35px;
   font-weight: lighter;
